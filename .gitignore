@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dataset images (มักไฟล์ใหญ่ / อยากคุมด้วย Git LFS แทน)
+# ถ้าอยาก push รูปจริงเข้า repo ด้วย ให้ลบ/คอมเมนต์บรรทัดด้านล่างออก
+dataset/images/*
+dataset/masks/*
+!dataset/images/.gitkeep
+!dataset/masks/.gitkeep
+
+# Output ที่ generate ใหม่ได้เสมอจากสคริปต์ ไม่จำเป็นต้อง track
+output/masks/*
+output/compare/*
+!output/masks/.gitkeep
+!output/compare/.gitkeep
